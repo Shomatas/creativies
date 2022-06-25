@@ -1,0 +1,36 @@
+.team
+  position: relative
+  padding-top: 180px
+
+  @media screen and (max-width: 480px)
+    padding-top: 50px
+
+  &__title
+    margin-bottom: 150px
+    @media screen and (max-width: 480px)
+      margin-bottom: 30px
+
+  &__subtitle
+    margin-bottom: 70px
+
+  &-cards
+    margin-bottom: 100px
+
+  &-card
+    text-transform: uppercase
+    position: relative
+    margin-bottom: 40px
+
+    &-info
+      position: absolute
+      bottom: -20px
+      background: white
+      text-align: center
+      width: calc(100% * 220 / 270)
+      padding-top: 20px
+      left: 50%
+      margin-left: calc(100% * (-110 / 270))
+
+    &-name
+      font-size: 20pt
+      color: var(--color-blue-chill)

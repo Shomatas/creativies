@@ -1,0 +1,11 @@
+@mixin font($family, $path, $weight)
+  @font-face
+    font-family: $family
+    src: url('./fonts/' + $path)
+    font-weight: $weight
+
+@include font('Myriad Pro', 'MYRIADPRO-REGULAR.OTF', 400)
+@include font('Gotham', 'GothamBold.ttf', bold)
+@include font('Gotham', 'GothamMedium.ttf', 500)
+@include font('Gotham', 'GothamBook.ttf', 350)
+@include font('OpenSans', 'OpenSans-Regular.ttf', bold)
